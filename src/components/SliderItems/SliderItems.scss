@@ -1,0 +1,51 @@
+
+.sliderItems{
+  .slick-slider{
+    .slick-prev{
+      background: rgb(240, 240, 240);
+    }
+    .slick-next {
+      background: rgb(240, 240, 240);
+    }
+    .slick-list{
+
+
+    }
+  }
+}
+
+h3 {
+    background: #00558B;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+}
+
+.slick-prev {
+  background: black;
+}
+
+.slick-next {
+  background: black;
+}
+.slick-dots li {
+  margin: 0 16px;
+}
+.slick-dots li button:before {
+  content: " ";
+  background: #D8D8D8;
+  opacity: 1;
+  height: 4px;
+  width: 40px;
+}
+.slick-dots li.slick-active button:before {
+  content: " ";
+  background: #0080AD;
+  opacity: 1;
+  height: 4px;
+  width: 40px;
+}

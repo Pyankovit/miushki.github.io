@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+}
+.main-slider {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  max-width: 100vw;
+  .slick-slider {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+h3 {
+    background: #00558B;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    padding: 2%;
+    position: relative;
+}
+
+.card {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  &:hover {
+    cursor: pointer;
+  }
+  h4 {
+    color: #3E4042;
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:#c30;
+    font-size:2em;
+    align-content: center;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.slick-dots{
+  margin-bottom: 10px;
+}
+.slick-dots li {
+  margin: 0 16px;
+}
+.slick-dots li button:before {
+  content: " ";
+  background: #D8D8D8;
+  opacity: 1;
+  height: 4px;
+  width: 40px;
+}
+.slick-dots li.slick-active button:before {
+  content: " ";
+  background: rgb(14, 173, 0);
+  opacity: 1;
+  height: 4px;
+  width: 40px;
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(57, 57, 57, 0.5);
+  &:hover {
+    background-color: rgba(250, 250, 250, 0.253);
+  }
+}
+
+
+$inactiveColor: rgba(0, 0, 0, 0.4);
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: color .2s linear;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.623);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  &.left {
+    left: 5%;      
+    align-items: flex-start;
+    i { 
+      padding: 0.7em 0.88em;
+    }
+  }
+  
+  &.right {
+    right: 5%;      
+    align-items: flex-end;
+    i { 
+      padding: 0.7em 0.95em;
+    }
+  }
+  &:hover {
+    color: $inactiveColor;
+  }
+}
+
+}

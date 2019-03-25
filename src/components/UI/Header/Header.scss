@@ -1,0 +1,52 @@
+
+$activeColor: rgb(30, 223, 5);
+
+* {
+    box-sizing: border-box;
+  }
+
+.header-inner{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    :first-child{
+        align-items: flex-start;
+    }
+    :last-child{
+        align-items: flex-end;
+    }
+    i{
+        color: $activeColor;
+    }
+}
+
+
+
+.header-inner-left{
+    .App-logo{    
+    width: 190px;
+    height: 69px;
+}}
+
+
+
+
+.backcall {    border-radius: 5px;
+    border-width: 1px;
+    border-color: $activeColor;
+    border-style: solid;
+    width: 169px;
+    height: 36px;
+    background-color: white;
+    color: $activeColor;
+    &:hover {
+        background-color: $activeColor;
+        color: #ffffff;
+    }
+}
+
+.header-inner-center{ display: flex;}
+
+    
