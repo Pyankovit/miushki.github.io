@@ -1,6 +1,85 @@
+@import "../../index.scss";
+
 
 .sliderItems{
   .slick-slider{
+
+    
+    .item-box{
+      
+      .imagewrapper{
+        display: flex;
+        justify-content: center;
+        img{
+          height: 230px;
+          width: 260px;
+        }
+        .roundwrap{ 
+          position: absolute;
+          margin-left: 90px; 
+          top: 10px;
+          border-radius: 50%;
+          width: 55px;
+          height: 55px;
+          -webkit-box-shadow: inset 50px 50px 50px -70px rgba(0,0,0,0.5);
+          -moz-box-shadow: inset 50px 50px 50px -70px rgba(0,0,0,0.5);
+          box-shadow: inset 50px 50px 50px -70px rgba(0,0,0,0.5);
+          &.red{
+            background-color: red;
+          }
+          &.green{
+            background-color: green;
+          }
+          h1{
+            color: white;
+          }
+        }
+      }
+      .pricewrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+          padding-bottom: 10px;
+        }
+      }
+
+
+
+
+
+
+      h3 {
+        background: #00558B;
+        color: #fff;
+        line-height: 230px;
+        text-align: center;
+        font-size: 36px;
+        margin: 10px;
+        padding: 2%;
+        position: relative;
+
+      }
+      h1{
+        text-align: center;
+        @include headlinesecondfont(
+          20px,
+         black, 
+         'Open Sans',
+         bold,
+         normal);
+      }
+      h2{
+        text-align: center;
+        @include headlinesecondfont(
+          12px,
+         black, 
+         'Open Sans',
+         bold,
+         normal);
+      }
+
+    }
     .slick-prev{
       background: rgb(240, 240, 240);
     }
@@ -14,16 +93,7 @@
   }
 }
 
-h3 {
-    background: #00558B;
-    color: #fff;
-    line-height: 100px;
-    text-align: center;
-    font-size: 36px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-}
+
 
 .slick-prev {
   background: black;
@@ -49,3 +119,30 @@ h3 {
   height: 4px;
   width: 40px;
 }
+
+.arrowsmall {
+  position: absolute;
+  transition: color .2s linear;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.623);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+
+  &.left {
+    left: 5%;      
+    align-items: flex-start;
+    i { 
+      padding: 0.7em 0.88em;
+    }
+  }
+  
+  &.right {
+    right: 5%;      
+    align-items: flex-end;
+    i { 
+      padding: 0.7em 0.95em;
+    }
+  }}

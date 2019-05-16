@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
 
-import './components/MainSlider/MainSlider'
-//import MainSlider from './components/MainSlider/MainSlider';
 
 
 import Header from './components/UI/Header/Header'
 import MainMenu from './components/UI/MainMenu/MainMenu';
 import SimpleSlider from './components/SimpleSlider/SimpleSlider';
 import SliderItems from './components/SliderItems/SliderItems'
-import BlockTitle from './components/UI/BlockTitle/BlockTitle'
+import ContentReasons from './components/ContentReasons/ContentReasons'
+import ContactForm from './components/UI/ContactForm/ContactForm'
+import Reviews from './components/UI/Reviews/Reviews'
 
+import About from './components/UI/About/About'
+import Footer from './components/UI/Footer/Footer'
 
-
-
+import './index.scss'
 class App extends Component {
   render() {
     return (
@@ -22,7 +23,11 @@ class App extends Component {
         <MainMenu/>
         <SimpleSlider />
         <SliderItems/>
-        <BlockTitle/>
+        <ContentReasons/>
+        <Reviews/>
+        <ContactForm/>
+        <About/>
+        <Footer/>
       </div>
     );
   }

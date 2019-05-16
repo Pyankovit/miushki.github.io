@@ -6,7 +6,7 @@ import './Header.scss'
 const Header = ()=>{
    
     return (
-            <div className="header-inner">
+            <div className="header-inner headerwrapper">
                 <div className="header-inner-left">
                     <img src={logo} className="App-logo" alt="logo"/>
                 </div>

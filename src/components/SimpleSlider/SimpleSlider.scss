@@ -1,3 +1,6 @@
+@import '../../index.scss';
+
+
 body {
   margin: 0;
   padding: 0px;
@@ -15,16 +18,6 @@ body {
     }
 }
 
-h3 {
-    background: #00558B;
-    color: #fff;
-    line-height: 100px;
-    text-align: center;
-    font-size: 36px;
-    padding: 2%;
-    position: relative;
-}
-
 .card {
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -33,13 +26,21 @@ h3 {
     cursor: pointer;
   }
   h4 {
-    color: #3E4042;
-    position:absolute;
-    top:0px;
-    left:0px;
-    color:#c30;
+    max-width: 1170px;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 12%;
     font-size:2em;
-    align-content: center;
+    text-shadow: rgb(59, 59, 59) 0 0 1px;
+    @include headlinefont;
+  }
+  h3 {
+    text-align: center;
+    position: absolute;
+    top:  40%;
+    left: 12%;
+    @include headlinesecondfont;
   }
   p {
     line-height: 1.5;
@@ -47,24 +48,27 @@ h3 {
 }
 
 .slick-dots{
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 .slick-dots li {
   margin: 0 16px;
 }
 .slick-dots li button:before {
-  content: " ";
-  background: #D8D8D8;
+  border-radius: 50%;
+  border: 3px solid #8a8a8a;
+  background: rgba(0, 0, 0, 0);
   opacity: 1;
-  height: 4px;
-  width: 40px;
+  height: 17px;
+  width: 17px;
+
 }
 .slick-dots li.slick-active button:before {
-  content: " ";
-  background: rgb(14, 173, 0);
+  background: $activeColor;
+  border: 3px solid $activeColor;
+  z-index: 1;
   opacity: 1;
-  height: 4px;
-  width: 40px;
+  height: 17px;
+  width: 17px;
 }
 
 
@@ -114,4 +118,11 @@ $inactiveColor: rgba(0, 0, 0, 0.4);
   }
 }
 
+
+
+
+
+
 }
+
+

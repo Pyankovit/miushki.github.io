@@ -23,7 +23,7 @@ export default class MainMenu extends Component {
         <React.Fragment>
         <div className="main-line">
         </div>
-        <div className="main-menu">
+        <div className="main-menu headerwrapper">
             {buttons}
         </div>        
         </React.Fragment>

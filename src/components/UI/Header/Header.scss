@@ -1,15 +1,21 @@
+@import '../../../index.scss';
 
-$activeColor: rgb(30, 223, 5);
 
 * {
     box-sizing: border-box;
   }
 
+.headerwrapper{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
 .header-inner{
+    @include headermainfont;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     height: 100px;
-    justify-content: center;
     align-items: center;
     :first-child{
         align-items: flex-start;
@@ -19,6 +25,8 @@ $activeColor: rgb(30, 223, 5);
     }
     i{
         color: $activeColor;
+        font-size: 1.2em;
+        padding: 0 5px;
     }
 }
 
